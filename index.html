@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>自己紹介</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: "Yu Gothic", sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.card {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+.section {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.section h2 {
+    border-left: 5px solid white;
+    padding-left: 10px;
+}
+
+.skill {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    opacity: 0.8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="card">
+
+        <img src="Hana.JPEG"
+             alt="プロフィール画像"
+             class="profile-image">
+
+        <h1>Norio Mori</h1>
+
+        <p class="subtitle">
+            C# と Windowsフォームを勉強中
+        </p>
+
+        <div class="section">
+            <h2>自己紹介</h2>
+            <p>
+                プログラミング学習中です。
+                Visual Studioを使ってC#アプリケーション開発に挑戦しています。
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>スキル</h2>
+            <span class="skill">C#</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">Windows Forms</span>
+        </div>
+
+        <div class="section">
+            <h2>趣味</h2>
+            <p>
+                パソコン、プログラミング、写真、動画鑑賞
+            </p>
+        </div>
+
+        <div class="footer">
+            © 2026 MoriPro
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
