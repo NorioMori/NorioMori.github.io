@@ -7,101 +7,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #0f0d1a;
-    --surface: #181528;
-    --line: #2b2745;
-    --text: #ebe9f5;
-    --muted: #9b97b8;
-    --accent: #a98bff;
-    --accent-soft: rgba(169, 139, 255, 0.14);
-    --code-string: #7fd6c2;
-    --code-type: #8fb4ff;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { color-scheme: dark; }
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
-    line-height: 1.8;
-    background-image: radial-gradient(60rem 30rem at 85% -10%, rgba(169, 139, 255, 0.16), transparent 60%);
-    background-repeat: no-repeat;
-  }
-  .wrap { max-width: 880px; margin: 0 auto; padding: 72px 24px 40px; }
-
-  /* ヒーロー */
-  .hero {
-    display: grid;
-    grid-template-columns: 1fr 220px;
-    gap: 48px;
-    align-items: center;
-    margin-bottom: 72px;
-  }
-  .hero h1 {
-    font-size: clamp(2.6rem, 8vw, 4.4rem);
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-  }
-  .hero .lead { color: var(--muted); margin-top: 16px; font-size: 1.05rem; }
-  .code {
-    margin-top: 28px;
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    padding: 16px 20px;
-    font-family: "JetBrains Mono", Consolas, monospace;
-    font-size: 0.85rem;
-    line-height: 1.7;
-    overflow-x: auto;
-    white-space: pre;
-  }
-  .code .t { color: var(--code-type); }
-  .code .s { color: var(--code-string); }
-  .code .p { color: var(--muted); }
-  .photo {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid var(--accent);
-    box-shadow: 0 0 0 8px var(--accent-soft), 0 20px 50px rgba(0, 0, 0, 0.5);
-  }
-
-  /* セクション */
-  section { padding: 32px 0; border-top: 1px solid var(--line); }
-  h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 14px; color: var(--accent); }
-  section p { max-width: 38em; }
-
-  .chips { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; }
-  .chips li {
-    background: var(--accent-soft);
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    padding: 6px 18px;
-    font-family: "JetBrains Mono", Consolas, monospace;
-    font-size: 0.9rem;
-  }
-  .hobbies { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; list-style: none; }
-  .hobbies li {
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    padding: 16px 18px;
-  }
-
-  footer { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85rem; }
-
-  a:focus-visible, .code:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
-
-  @media (max-width: 680px) {
-    .wrap { padding-top: 48px; }
-    .hero { grid-template-columns: 1fr; gap: 32px; }
-    .photo { order: -1; width: 160px; height: 160px; }
-  }
-</style>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
 </head>
 <body>
 <main class="wrap">
@@ -117,7 +24,7 @@
     Tool     = <span class="s">"Visual Studio"</span>
 };</div>
     </div>
-    <img class="photo" src="Hana.JPEG" alt="プロフィール画像">
+    <img id="monthly-photo" class="photo" src="Hana.JPEG" alt="プロフィール画像">
   </header>
 
   <section>
